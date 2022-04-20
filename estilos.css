@@ -129,7 +129,7 @@ button{
     padding: 2rem;
     border: 2px solid #C2222D;
 }
-#sobreMi .contenedor .contenido button{
+#sobreMi .contenedor .contenido a{
     width: 150px;
     height: 40px;
     left: 20px;
@@ -137,6 +137,9 @@ button{
     font-size: 0.75rem;
     background: #C2222D;
     border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
 }
 
 /*Servicios*/
@@ -165,7 +168,6 @@ button{
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px 0 0 0;
-    flex-shrink: 1;
 }
 #servicios .contenedor .servicios .servicio{
     width: 375px;
