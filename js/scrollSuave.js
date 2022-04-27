@@ -37,13 +37,13 @@ $(document).ready(function () {
             $('html, body').stop().animate({scrollTop:seccionOffsetTop-200}, 1000)
     })
     
-    $('a.scrollContactame').on('click',function (e) {
+    $('a.scrollPortafolio').on('click',function (e) {
         e.preventDefault();
         var seccionOffsetTop = $($(this).attr('href')).offset().top;
             $('html, body').stop().animate({scrollTop:seccionOffsetTop-50}, 1000)
     })
 
-    $('a.scroll-contacto').on('click',function (e) {
+    $('a.scrollContactame').on('click',function (e) {
         e.preventDefault();
         var seccionOffsetTop = $($(this).attr('href')).offset().top;
             $('html, body').stop().animate({scrollTop:seccionOffsetTop+85}, 1000)
