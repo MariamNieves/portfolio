@@ -10,18 +10,50 @@
 <body>
 
     <section class="seccion" id="portada">
-        <header class="encabezado normal">
+        <header class="encabezado" id="normal">
             
             <img src="img/Logo blanco.png" alt="MaJé">
             
             <nav class="menu principal">
                 <a href="#" class="volverArriba">Inicio</a>
-                <a href="#sobreMi" class="scrollSuave">Sobre mí</a>
-                <a href="#servicios" class="scrollSuave">Servicios</a>
-                <a href="#portafolio" class="scrollSuave">Portafolio</a>
-                <a href="#contactame" class="scrollSuave">Contáctame</a>
+                <a href="#sobreMi" class="scrollSobremi">Sobre mí</a>
+                <a href="#servicios" class="scrollServicios">Servicios</a>
+                <a href="#portafolio" class="scrollPortafolio">Portafolio</a>
+                <a href="#contactame" class="scrollContactame">Contáctame</a>
             </nav>
         </header>
+
+        <header class="encabezado" id="fijo">
+            
+            <img src="img/Logo blanco.png" alt="MaJé">
+            
+            <nav class="menu principal">
+                <a href="#" class="volverArriba">Inicio</a>
+                <a href="#sobreMi" class="scrollSobremi">Sobre mí</a>
+                <a href="#servicios" class="scrollServicios">Servicios</a>
+                <a href="#portafolio" class="scrollPortafolio">Portafolio</a>
+                <a href="#contactame" class="scrollContactame">Contáctame</a>
+            </nav>
+        </header>
+
+        <header class="encabezado" id="movil">
+            
+            <img src="img/Logo blanco.png" alt="MaJé">
+            <svg id="botonMenu" viewBox="0 0 68 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M68 25C68 23.1991 66.5269 21.7391 64.7097 21.7391H3.29032C1.47313 21.7391 0 23.1991 0 25C0 26.8009 1.47313 28.2609 3.29032 28.2609H64.7097C66.5269 28.2609 68 26.8009 68 25Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M68 3.26087C68 1.45994 66.5269 0 64.7097 0H3.29032C1.47313 0 0 1.45994 0 3.26087C0 5.0618 1.47313 6.52174 3.29032 6.52174H64.7097C66.5269 6.52174 68 5.0618 68 3.26087Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M68 46.7391C68 44.9382 66.5269 43.4783 64.7097 43.4783H3.29032C1.47313 43.4783 0 44.9382 0 46.7391C0 48.5401 1.47313 50 3.29032 50H64.7097C66.5269 50 68 48.5401 68 46.7391Z" fill="white"/>
+                </svg>   
+
+        </header>
+
+        <nav class="menu" id="desplegable">
+            <a href="#" class="volverArriba">Inicio</a>
+            <a href="#sobreMi" class="scrollSobremi">Sobre mí</a>
+            <a href="#servicios" class="scrollServicios">Servicios</a>
+            <a href="#portafolio" class="scrollPortafolio">Portafolio</a>
+            <a href="#contactame" class="scrollContactame">Contáctame</a>
+        </nav>
 
         <div class="contenedor">
             <img src="img/Foto circular.png" alt="Fotografía de Mariam Jesé">
@@ -169,5 +201,10 @@
         <p>Desarrollado por MaJé</p>
     </footer>
     
+    <!--Scripts-->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/encabezado.js"></script>
+
 </body>
 </html>
