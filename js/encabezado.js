@@ -11,44 +11,7 @@ $(document).ready(function () {
             fixedHeader.setAttribute("style",'margin-top:-95px');
         };
     };
-    
-
-
-
-
-    /**/
-    let botonMenu = document.getElementById('botonMenu');
-    let mostrado = 0;
-    let enlaces = document.getElementById('sobreMi');
-
-
-    function mostrar() {
-        let desplegable = document.getElementById('desplegable');
-        desplegable.setAttribute('style', 'right:0');
-        mostrado = 1;
-    };
-
-    function ocultar() {
-        desplegable.setAttribute('style', 'right:-35%');
-        mostrado = 0;
-    };
-
-    botonMenu.onclick = function () {
-        if (mostrado == 0){
-            mostrar();
-        }else{
-            ocultar();
-        }    
-    };
-
-    enlaces.onclick = function () {
-        ocultar();
-    };
-
-
-
-
-    
+        
 });
    
 
