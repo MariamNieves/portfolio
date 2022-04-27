@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('a.scrollSobremi').on('click',function (e) {
         e.preventDefault();
         var seccionOffsetTop = $($(this).attr('href')).offset().top;
-            $('html, body').stop().animate({scrollTop:seccionOffsetTop}, 1000)
+            $('html, body').stop().animate({scrollTop:seccionOffsetTop-100}, 1000)
     })
 
     $('a.scrollServicios').on('click',function (e) {
@@ -40,7 +40,7 @@ $(document).ready(function () {
     $('a.scrollPortafolio').on('click',function (e) {
         e.preventDefault();
         var seccionOffsetTop = $($(this).attr('href')).offset().top;
-            $('html, body').stop().animate({scrollTop:seccionOffsetTop-50}, 1000)
+            $('html, body').stop().animate({scrollTop:seccionOffsetTop-100}, 1000)
     })
 
     $('a.scrollContactame').on('click',function (e) {
