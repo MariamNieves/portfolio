@@ -6,9 +6,6 @@ $(document).ready(function () {
         
         if (y2 > 250) {
             fixedHeader.setAttribute("style","margin-top:0");
-            setTimeout(() => {
-                fixedHeader.setAttribute("style",'margin-top:-95px');
-            }, 5000);
         };
         if (y2 < 200) {
             fixedHeader.setAttribute("style",'margin-top:-95px');
