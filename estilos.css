@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;700;800&display=swap');
 
+/*Generales*/
 *{
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: white;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
-/*Generales*/
-
+body{
+    overflow-x: hidden;
+}
 h1{
     font-size: 3.2rem;
     font-weight: 800;
@@ -37,9 +38,14 @@ button{
     height: 100vh;
     padding: 0 5% 0 5%;
 }
+
+
+
+/*MAIN*/
+/*Encabezado*/
 .encabezado{
     width: 100;
-    height: 115px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -51,6 +57,44 @@ button{
 .encabezado img{
     height: 55px;
 }
+#fijo{
+    background-color: #34353A;
+    width: 100%;
+    min-height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all .4s ease;
+    margin-top: -95px;
+}
+#movil{
+    background-color: #34353A;
+    display: none;
+}
+#movil svg{
+    width: 40px;
+}
+#movil svg:hover{
+    cursor: pointer;
+}
+#desplegable{
+    background-color: #34353A;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0 15px 0;
+    width: 30%;
+    height: 200px;
+    position: absolute;
+    right: -100%;
+    transition: all .4s ease;
+    z-index: 1000;
+}
+#desplegable a{
+    text-decoration: none;
+    
+}
 .menu{
     width: 550px;
     display: flex;
@@ -58,11 +102,7 @@ button{
 }
 .menu a{
     text-decoration: none;
-    color: white;
 }
-
-
-/*MAIN*/
 
 /*Portada*/
 #portada{
@@ -140,6 +180,7 @@ button{
     text-align: center;
     line-height: 40px;
     text-decoration: none;
+    box-shadow:7px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
 /*Servicios*/
@@ -272,3 +313,28 @@ footer{
     justify-content: center;
     text-align: center;
 }
+
+
+
+/*Media querys*/
+@media screen and (max-width:950px) {
+
+#normal, #fijo{
+    display: none;
+}
+
+.encabezado{
+    padding: 0 5% 0 5%;
+}
+#movil{
+    display: flex;
+}
+#desplegable{
+    display: flex;
+}
+
+
+
+
+}
+
