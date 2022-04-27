@@ -70,6 +70,11 @@ button{
 #movil{
     background-color: #34353A;
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 }
 #movil svg{
     width: 40px;
@@ -86,8 +91,9 @@ button{
     padding: 15px 0 15px 0;
     width: 30%;
     height: 200px;
-    position: absolute;
-    right: -100%;
+    position: fixed;
+    top: 90px;
+    right: -30%;
     transition: all .4s ease;
     z-index: 1000;
 }
@@ -229,6 +235,33 @@ button{
     margin: 10px;
     background: #34353A;
     border-radius: 20px;
+    box-shadow:7px 7px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px 35px 20px 35px;
+    text-align: start;
+}
+#servicios .contenedor .servicios .servicio .contenido{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+#servicios .contenedor .servicios .servicio .contenido .iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+}
+#servicios .contenedor .servicios .servicio .contenido .iconos img{
+    width: 35px;
+}
+#servicios .contenedor .servicios .servicio .contenido .iconos .achicar{
+    width: 28px;
+}
+#servicios .contenedor .servicios .servicio .contenido .nombres{
+    line-height: 35px;
+}
+#servicios .contenedor .servicios .servicio .contenido .nombres .achicar{
+    line-height: 28px;
 }
 
 /*Portafolio*/
