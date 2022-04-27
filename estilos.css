@@ -105,17 +105,26 @@ button{
 }
 
 /*Portada*/
+
+.main .banner-principal{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
 #portada{
-    background-image: url(img/fondo.png);
+    /*background-image: url(img/fondo.png);*/
     width: 100%;
     min-height: 490px;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-position-y: top;
+    background-position-y: top;*/
     padding: 0;
+
 }
+
+
 #portada .contenedor{
     width: 100%;
     min-width: 320px;
@@ -164,6 +173,10 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 30px 0 30px;
+}
+#sobreMi .contenedor .contenido .titulo{
+    height: 50px;
 }
 #sobreMi .contenedor .contenido .infoPersonal{
     padding: 2rem;
