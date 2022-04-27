@@ -129,8 +129,6 @@ button{
     padding: 0;
 
 }
-
-
 #portada .contenedor{
     width: 100%;
     min-width: 320px;
@@ -183,10 +181,25 @@ button{
 }
 #sobreMi .contenedor .contenido .titulo{
     height: 50px;
+    margin-bottom: 15px;
 }
 #sobreMi .contenedor .contenido .infoPersonal{
-    padding: 2rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     border: 2px solid #C2222D;
+    align-items: center;
+}
+#sobreMi .contenedor .contenido .infoPersonal .contenedorImg2 img{
+    display: none;
+}
+#sobreMi .contenedor .contenido .infoPersonal strong{
+    margin-right: 5px;
+}
+#sobreMi .contenedor .contenido .infoPersonal .infoPersonalTexto{
+    height: fit-content;
+}
+#sobreMi .contenedor .contenido .infoPersonal .infoPersonalTexto .info{
+    display: flex;
+    margin: 15px 0 15px 0;
 }
 #sobreMi .contenedor .contenido a{
     width: 150px;
@@ -200,6 +213,9 @@ button{
     line-height: 40px;
     text-decoration: none;
     box-shadow:7px 7px 15px rgba(0, 0, 0, 0.5);
+}
+#sobreMi .contenedor .contenido a:hover{
+    background: #a0222a;
 }
 
 /*Servicios*/
@@ -365,19 +381,78 @@ footer{
 /*Media querys*/
 @media screen and (max-width:950px) {
 
-#normal, #fijo{
-    display: none;
-}
+    /*Navegación*/
+    #normal, #fijo{
+        display: none;
+    }
+    .encabezado{
+        padding: 0 5% 0 5%;
+    }
+    #movil{
+        display: flex;
+    }
+    #desplegable{
+        display: flex;
+    }
 
-.encabezado{
-    padding: 0 5% 0 5%;
-}
-#movil{
-    display: flex;
-}
-#desplegable{
-    display: flex;
-}
+
+    /*Sobre Mi*/
+    #sobreMi{
+        justify-content: center;
+        height: fit-content;
+    }
+    #sobreMi .contenedorImg{
+        display: none;
+    }
+    #sobreMi .contenedor{
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+    }
+    #sobreMi .contenedor .contenido{
+        align-content: center;
+        align-items: center;
+    }
+    #sobreMi .contenedor .contenido .titulo{
+        margin-bottom: 30px;
+    }
+    #sobreMi .contenedor .contenido .infoPersonal{
+        display: flex;
+        justify-content: space-between;
+        height: 250px;
+        width: 550px;
+        margin: 50px 0 30px 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    #sobreMi .contenedor .contenido .infoPersonal .contenedorImg2{
+        height: 100%;
+        width: 200px;
+        position: relative;
+    }
+    #sobreMi .contenedor .contenido .infoPersonal .contenedorImg2 img{
+        display: flex;
+        width: 200px;
+        position: absolute;
+        bottom: 0;
+    }
+    #sobreMi .contenedor .contenido .infoPersonal .contenedorImg2 .infoPersonalTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+    #sobreMi .contenedor .contenido .infoPersonal .infoPersonalTexto{
+        margin: 20px 0 20px 0;
+    }
+    #sobreMi .contenedor .contenido .infoPersonal .infoPersonalTexto .info{
+        flex-direction: column;
+        text-align: start;
+        justify-content: flex-start;
+        margin: 0;
+        height: 100%;
+        
+    }
 
 
 
