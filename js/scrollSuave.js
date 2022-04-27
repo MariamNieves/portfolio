@@ -46,7 +46,7 @@ $(document).ready(function () {
     $('a.scrollContactame').on('click',function (e) {
         e.preventDefault();
         var seccionOffsetTop = $($(this).attr('href')).offset().top;
-            $('html, body').stop().animate({scrollTop:seccionOffsetTop+85}, 1000)
+            $('html, body').stop().animate({scrollTop:seccionOffsetTop-100}, 1000)
     })
 
 
