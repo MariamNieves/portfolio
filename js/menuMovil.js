@@ -8,16 +8,16 @@ $(document).ready(function () {
     function mostrarOcultar(e) {
         e.preventDefault
         if (show == 0) {
-            desplegable.animate({right: '0%'},250);
+            desplegable.animate({right: '0%'},150);
             show = 1;
         } else{
-            desplegable.animate({right: '-40%'},250);
+            desplegable.animate({right: '-40%'},150);
             show = 0;
         }
     }
 
     function ocultar() {
-        desplegable.animate({right: '-40%'},250);
+        desplegable.animate({right: '-40%'},150);
             show = 0;
     }
 
