@@ -94,7 +94,7 @@ button{
     height: 200px;
     position: fixed;
     top: 90px;
-    right: -30%;
+    right: -40%;
     transition: all .4s ease;
     z-index: 1000;
 }
