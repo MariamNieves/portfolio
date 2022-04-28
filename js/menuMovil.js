@@ -11,13 +11,13 @@ $(document).ready(function () {
             desplegable.animate({right: '0%'},250);
             show = 1;
         } else{
-            desplegable.animate({right: '-30%'},250);
+            desplegable.animate({right: '-40%'},250);
             show = 0;
         }
     }
 
     function ocultar() {
-        desplegable.animate({right: '-30%'},250);
+        desplegable.animate({right: '-40%'},250);
             show = 0;
     }
 
